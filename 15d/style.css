@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(158, 214, 228);
+}
+
+.lentele {
+    border: 2px solid black;
+    border-radius: 5px; /* apvalina krastus */
+    width: 300px;
+    background-color: white;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+
+.duomenys {
+    padding: 10px;
+}
+
+.mygtukas {
+    background-color: wheat;
+    cursor: pointer; /* pelytes strelytes keitimas */
+}
+
+.mygtukas:hover {
+    background-color: yellow;
+    opacity: 0.9;/* permatomumas */
+}
+
+.menu {
+width: 100%;
+border: 2px solid red;
+padding: 0px;
+background-color: yellow;
+display: flex;
+justify-content: space-between; /* kad lygiuotu i sonus*/
+}
+
+.menu a {
+    font-size: 20px;
+    text-decoration: none;
+    color: green;
+    display: flex;
+    justify-content: center;
+}
+
+.menu a:hover {
+    font-size: 60px;
+    color: blue;
+}
+
+/* .viduriai {
+    border: 5px solid red;
+    display: flex;
+    flex-direction: row;  kad langai butu vienas kito
+
+} */
+
+header {
+    width: 100%;
+    height: 150px;
+    border: 2px solid black;
+}

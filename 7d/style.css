@@ -1,0 +1,19 @@
+.lentele {
+    border: 2px solid black;
+    width: 300px;
+    background-color: white;
+    margin: auto;
+    margin-top: 300px;
+}
+
+.duomenys {
+    padding: 10px;
+}
+
+.mygtukas {
+    background-color: wheat;
+}
+
+.mygtukas:hover {
+    background-color: orangered;
+}

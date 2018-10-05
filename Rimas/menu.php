@@ -1,5 +1,5 @@
 <div class="menu">
-<a href="index.php">News</a>
+<a href="posts.php">News</a>
 <a href="register.php">Registration</a>
 <a href="loginDB.php">Login</a>
 <a href="search.php">Search</a>

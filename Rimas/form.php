@@ -1,8 +1,8 @@
 <form action="action.php" method="POST">
     <div class="board">
         <div class="tabs">
-            <button type="submit" onclick="location.href = 'loginDB.php';" class="grey">Login</button>
-            <button type="submit">Register</button>
+            <button type="button" onclick="location.href = 'loginDB.php';" class="grey">Login</button>
+            <button type="button">Register</button>
         </div>
         <div class="container">
             <div class="field">
@@ -53,7 +53,7 @@
         </div>
         <div class="signin">
             <div class="input-group2">
-                <button onclick="location.href = 'rules.php';" class="a">Terms & Privacy.</button>
+                <button type="button" onclick="location.href = 'rules.php';" class="a">Terms & Privacy.</button>
             </div>    
             <div class="input-group2">
                 <button type="submit" class="b">Register</button>

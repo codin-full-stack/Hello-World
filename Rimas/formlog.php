@@ -11,8 +11,8 @@
     <form action="" method="POST">
         <div class="board">
             <div class="tabs">
-                <button type="submit">Login</button>
-                <button type="submit" onclick="location.href = 'register.php';" class="grey">Register</button>
+                <button type="button">Login</button>
+                <button type="button" onclick="location.href = 'register.php';" class="grey">Register</button>
             </div>
             <div class="container">
                 <div class="input-group">
@@ -26,7 +26,7 @@
             </div>
             <div class="signin">
                 <div class="input-group2">
-                    <button onclick="location.href = 'index.php';" class="a">Forgot password?</button>
+                    <button type="button" onclick="location.href = 'index.php';" class="a">Forgot password?</button>
                 </div>    
                 <div class="input-group2">
                     <button type="submit" class="b">Signin</button>

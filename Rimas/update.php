@@ -41,7 +41,7 @@
         </div>
         <div class="signin">
             <div class="input-group2">
-                <button onclick="location.href = 'index.php';" class="a">Terms & Privacy.</button>
+                <button type="button" onclick="location.href = 'index.php';" class="a">Terms & Privacy.</button>
             </div>    
             <div class="input-group2">
                 <button type="submit" class="b">Submit</button>

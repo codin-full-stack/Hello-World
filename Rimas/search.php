@@ -16,7 +16,7 @@
                 </div>
                 <div class="signin">
                 <div class="input-group2">
-                    <button type="button" onclick="location.href = 'index.php';" class="a">home</button>
+                    <button type="button" onclick="location.href = 'index.php';" class="a">Home</button>
                 </div>    
                 <div class="input-group2">
                     <button type="submit" class="b">Search</button>
@@ -28,25 +28,39 @@
 
 <?php
 
-if (!empty($_POST)) {
-
-$fileSaves = "jsonSaves" . DIRECTORY_SEPARATOR . $_POST["first_name"] . "_" . $_POST["last_name"] .".json";
-
-if(file_exists($fileSaves)) {
-var_dump($fileSaves);
-
-$info = file_get_contents($fileSaves);
-$array = json_decode($info, true);
-
-foreach ($array as $key => $value) {
-    if(!empty($value)) {
-    echo $key . ": " . $value . "<br>";
-            }
-        }
-    } else {
-        echo "Vartotojas nerastas";
+if (! empty($_POST)) {
+    $sql = "SELECT * FROM users WHERE first_name = '" . $_POST['first_name'] . "' && last_name = '" . $_POST['last_name'] . "' LIMIT 1";
+$result = mysqli_query($connection, $sql);
+$row = mysqli_fetch_assoc($result);
+    if(! empty($row)) {
+        echo "Email: " . $row["email"] . "<br>";
+        echo "Age: " . $row["age"] . "<br>";
+        echo "Gender: " . $row["gender"] . "<br>";
+        echo "City: " . $row["city"] . "<br>";
+        echo "News: " . $row["news"] . "<br>";
     }
 }
+
+// if (!empty($_POST)) {
+
+// $fileSaves = "jsonSaves" . DIRECTORY_SEPARATOR . $_POST["first_name"] . "_" . $_POST["last_name"] .".json";
+
+// if(file_exists($fileSaves)) {
+// var_dump($fileSaves);
+
+// $info = file_get_contents($fileSaves);
+// $array = json_decode($info, true);
+
+// foreach ($array as $key => $value) {
+//     if(!empty($value)) {
+//     echo $key . ": " . $value . "<br>";
+//             }
+//         }
+//     } else {
+//         echo "Vartotojas nerastas";
+//     }
+// }
+
 
 
 

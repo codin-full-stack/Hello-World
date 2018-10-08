@@ -1,16 +1,16 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background-color: grey;
+	background-color: #4AA270;
 }
 h1 {
 	text-align: center;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	margin:0px;
 }
 
 .posts-wrapper {
-	border:1px solid red;
+	/* border:1px solid red; */
 	width: 1210px;
 	margin: 0px auto;
 	display: flex;
@@ -23,21 +23,29 @@ h1 {
 	margin-right: 30px;
 	background-color: white;
 	height: auto;
+	/* border: 1px solid red; */
+	text-decoration: none;
 
 }
-.post-description {
-	
+.post-description {	
 	padding: 50px 0px;
 	text-align: center;
 }
 img {
 	display: block;
 	width: 100%;
-	height: auto;
+	max-height: 370px;
+}
+video {
+	display: block;
+	width: 100%;
+	max-height: 370px;
 }
 .post:nth-child(4n+1) {
 	width: 570px;
 }
-a {
+a:hover {
 	opacity: 0.7;
+	cursor: pointer;
+	color: red;
 }

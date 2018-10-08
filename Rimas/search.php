@@ -2,16 +2,29 @@
 <head>
     <link rel="stylesheet" href="style.css">
 </head>
-<div class="search">
+
+<body>
     <form action="" method="POST">
-      <br>Vardas:<br>
-      <input type="text" name="first_name" value=""><br>
-      Pavarde:<br>
-      <input type="text" name="last_name" value=""><br>
-      <input class="mygtukas" style="border: none" type="submit" value="Submit">
-<input class="mygtukas" style="border: none" type="button" onclick="window.location.href = 'index.php';" value="Back" />      
+        <div class="board">
+                <div class="input-group">
+                    <label for="first_name"><b>VARDAS</b></label><br>
+                    <input type="text" placeholder="Vardenis" name="first_name" required><br>    
+                </div>
+                <div class="input-group">
+                    <label for="last_name"><b>PAVARDĖ</b></label><br>
+                    <input type="text" placeholder="Pavardenis" name="last_name" required>                    
+                </div>
+                <div class="signin">
+                <div class="input-group2">
+                    <button type="button" onclick="location.href = 'index.php';" class="a">home</button>
+                </div>    
+                <div class="input-group2">
+                    <button type="submit" class="b">Search</button>
+                </div>
+            </div>
+        </div>   
     </form>
-</div>
+</body>
 
 <?php
 

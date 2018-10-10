@@ -110,3 +110,22 @@ button.b {
     font-size: 11px;
     border: 1px solid red;
 } */
+
+.userboard {
+    border-collapse: collapse;
+    border-radius: 10px;
+    border: 1px solid red;
+    width: 60%;
+    margin: 0px auto;
+}
+
+.userboard th {
+    background-color: #6D7AE0;
+    border: none;
+    padding: 8px;
+}
+
+.userboard td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}

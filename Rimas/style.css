@@ -1,5 +1,5 @@
 /* reset */
-*, *:before, *:after {
+* {
     box-sizing: border-box;
 }
 
@@ -128,13 +128,14 @@ header {
     background-color: #FFAB87;
 }
 
-.userBoard {
+.userboard {
     margin: 0px auto;
     margin-top: 100px;
     border: 1px solid red;
     width: 80%;
     height: auto;
     background-color: #ffffff;
+    border-radius: 10px;
 }
 
 .mygtukas {
@@ -144,4 +145,65 @@ header {
 .mygtukas:hover {
     background-color: yellow;
     opacity: 0.9;
+}
+
+@media only screen and (max-width: 1024px) {
+	.menu {
+        display: flex;
+        /* flex-direction: column;
+        align-items: flex-start; */
+        flex-wrap: wrap;
+    }
+    .menu a {
+        padding-right: 30px;
+    }
+}
+
+.usertable {
+    position: relative;
+    top: 100px;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    border: none;
+    font-family: sans-serif;
+    position: relative;
+    left: 500px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #6D7AE0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    text-align: left;
+}
+
+tbody {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: grey;
+}
+
+th {
+    border: none;
+    padding: 5px 40px;
+    height: 60px;
+}
+
+td {
+    padding: 5px 40px;
+    height: 50px;
+    border-bottom: 1px solid #F2F2F2;
+    text-align: left;
+}
+@media only screen and (max-width: 1440px) {
+	table {
+        margin:auto; 
+        position: static;
+	}
 }

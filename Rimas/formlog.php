@@ -15,13 +15,15 @@
                 <button type="button" onclick="location.href = 'register.php';" class="grey">Register</button>
             </div>
             <div class="container">
-                <div class="input-group">
-                    <label for="email"><b>EMAIL</b></label><br>
-                    <input type="email" placeholder="example@email.com" name="email" required><br>    
-                </div>
-                <div class="input-group">
-                    <label for="password"><b>PASSWORD</b></label><br>
-                    <input type="password" placeholder="**********" name="password" required>                    
+                <div class="field">
+                    <div class="input-group">
+                        <label for="email"><b>EMAIL</b></label><br>
+                        <input type="email" placeholder="example@email.com" name="email" required><br>    
+                    </div>
+                    <div class="input-group">
+                        <label for="password"><b>PASSWORD</b></label><br>
+                        <input type="password" placeholder="**********" name="password" required>                    
+                    </div>
                 </div>
             </div>
             <div class="signin">

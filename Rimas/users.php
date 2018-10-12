@@ -25,7 +25,7 @@ $result = mysqli_query($connection, $sql);
                     <?php } ?>
                 </tr>
     <?php } else { ?>
-        <tr><td colspan="4">Rezultanu nera</td></tr>
+        <tr><td colspan="4">Rezultatu nera</td></tr>
     <?php } ?>
     </tbody>
 </table>

@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #4AA270;
+}
+h1 {
+	text-align: center;
+	/* border: 1px solid red; */
+	margin:0px;
+}
+
+.posts-wrapper {
+	border:1px solid red;
+	width: 1300;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.post {
+	margin: 2px;
+	margin-top: 20px;
+	min-width: 200px;
+	/* max-width: 40%; */
+	width: 270px;
+	/* padding: 30px; */
+	background-color: white;
+	height: auto;
+	/* border: 1px solid red; */
+	text-decoration: none;
+
+}
+/* .lol {
+	border: 1px solid red;
+
+} */
+
+.post-description {	
+	padding: 50px 0px;
+	text-align: center;
+}
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-height: 400px;
+}
+@media only screen and (min-width: 1271px) {
+	.post:nth-child(4n+1) {
+		width: 560px;
+	}
+}
+a:hover {
+	opacity: 0.7;
+	cursor: pointer;
+	color: red;
+}
+
+@media only screen and (max-width: 1024px) {
+	.posts-wrapper {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+	.posts-wrapper {
+		width: 90%;
+	}
+}

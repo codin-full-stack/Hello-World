@@ -6,7 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="posts.css">
 </head>
 <body>
-<h1>Popular stories</h1>
+<div class=title>
+<a>Popular stories</a>
+</div>
 <div class="posts-wrapper">
 	<a href="https://www.playcodemonkey.com/" class="post">
 		<img src="./images/monkey.jpg">

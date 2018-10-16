@@ -17,9 +17,10 @@ if(post2) {
     post2.innerHTML = leftDays + ' days left until Christmas!' +'<br><br>' + 'Kalėdinės Prekės internetu | pigu.lt‎';
 }
 
-// var post3 = document.querySelector('.post:nth-child(2) .img');
-// post3.innerHTML = 
-
+// var post2img = document.querySelector('.post:nth-child(2) .img');
+// if(post2img) {
+// post2img.innerHTML = 
+// }
 
 
 var post4 = document.querySelectorAll('.post:nth-child(4) .post-description');
@@ -50,5 +51,20 @@ var termsPrivacyElement = document.querySelector(".terms-privacy");
 if(termsPrivacyElement) {
     termsPrivacyElement.addEventListener("click", function () {
         termsPrivacyElement.innerHTML = "Nera";
+    }); 
+}
+
+var newsTitle = document.querySelector(".title");
+if(newsTitle) {
+    newsTitle.addEventListener("click", function () {
+        newsTitle.innerHTML = "Populiarios istorijos";
+    }); 
+}
+
+var mySelect = document.querySelector(".select-group");
+if(mySelect) {
+    mySelect.addEventListener("change", function () {
+        mySelect.style.color = "red";
+        // mySelect.innerHTML = "Pasirinkai: " + mySelect;
     }); 
 }

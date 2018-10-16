@@ -5,9 +5,10 @@
 body {
 	background-color: #4AA270;
 }
-h1 {
+
+.title {
 	text-align: center;
-	/* border: 1px solid red; */
+	font-size: 30px;
 	margin:0px;
 }
 

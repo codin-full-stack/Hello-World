@@ -58,7 +58,7 @@ if (!empty($_POST['password']) && ($_POST['new_password']!=="") && ($_POST['new_
                if(mysqli_query($connection, $updateSql)) {
                    echo 'Slaptažodis pakeistas';
                } else {
-                   echo 'Error! Įvyko klaida, duomenys neatsinaujino';
+                   echo 'Duomenys neatsinaujino';
                }
            } else {
                echo 'Error! Senas password įvestas blogai';
@@ -66,15 +66,15 @@ if (!empty($_POST['password']) && ($_POST['new_password']!=="") && ($_POST['new_
 
 
        } else {
-           echo "Error! Toks vartotojas neegzistuoja.";
+           echo "Vartotoju nera";
        }
 
    } else {
        echo "Error! Password nesutampa";
    }
 
-} else {
-   echo "Nesuvesti slaptažodžiai";
+// } else {
+//    echo "Nesuvesti slaptažodžiai";
 }
 
 echo "<br><br><a href='index.php'>Pagrindinis puslapis</a><br>";

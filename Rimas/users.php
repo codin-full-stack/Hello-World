@@ -3,7 +3,6 @@ $sql = "SELECT first_name, last_name, age, city, email FROM users";
 $result = mysqli_query($connection, $sql);
 ?>
 <div class="usertable">
-<div style="overflow-x:auto;">
 <table>
     <thead>
         <tr>
@@ -28,7 +27,6 @@ $result = mysqli_query($connection, $sql);
     <?php } ?>
     </tbody>
 </table>
-    </div>
 </div>
 
 <?php include "footer.php"; ?>

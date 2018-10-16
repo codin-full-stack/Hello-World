@@ -1,7 +1,9 @@
 <?php include "header.php"; ?>
 
 <form action="" method="POST">
-    <div class="board">
+<div class="board">
+    <div class="container">
+        <div class="field">
             <div class="input-group">
                 <label for="first_name"><b>VARDAS</b></label><br>
                 <input type="text" placeholder="Vardenis" name="first_name" required><br>    
@@ -10,7 +12,9 @@
                 <label for="last_name"><b>PAVARDĖ</b></label><br>
                 <input type="text" placeholder="Pavardenis" name="last_name" required>                    
             </div>
-            <div class="signin">
+        </div>
+    </div> 
+        <div class="signin">
             <div class="input-group2">
                 <button type="button" onclick="location.href = 'index.php';" class="a">Home</button>
             </div>    

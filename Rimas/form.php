@@ -53,7 +53,7 @@
         </div>
         <div class="signin">
             <div class="input-group2">
-                <button type="button" onclick="location.href = 'rules.php';" class="a">Terms & Privacy.</button>
+                <button type="button" class="terms-privacy">Terms & Privacy.</button>
             </div>    
             <div class="input-group2">
                 <button type="submit" class="b">Register</button>

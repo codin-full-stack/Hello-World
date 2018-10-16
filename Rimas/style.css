@@ -83,6 +83,16 @@ button.grey{
     width: 100px;
     height: 40px;
 }
+
+.forgot-pass-link, .terms-privacy{
+    background-color: #ffffff;
+    color: #03799E;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+    /* border: 1px solid red; */
+}
+
 button.a {
     background-color: #ffffff;
     color: #03799E;

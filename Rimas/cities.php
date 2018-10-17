@@ -1,12 +1,10 @@
 <select name="city">
         <?php
         $cities = [
-        "psr"=>"Pasirink",
         "vln"=>"Vilnius",
         "kns"=>"Kaunas",
         "klp"=>"Klaipeda",
-        "siau"=>"Siauliai",
-        "kt"=>"Kitas"
+        "siau"=>"Siauliai"
         ];
         foreach($cities as $key=>$value){
         ?>

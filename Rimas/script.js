@@ -68,3 +68,16 @@ if(mySelect) {
         // mySelect.innerHTML = "Pasirinkai: " + mySelect;
     }); 
 }
+// menu responsive
+var bar = document.querySelector(".burger");
+console.log(bar)
+var barList = document.querySelector(".menu");
+console.log(barList)
+if(bar) {
+    bar.addEventListener("click", function () {
+        if (barList.classList.contains("active")) {
+            barList.classList.remove("active")
+        } else {
+        barList.classList.add("active")
+    }}); 
+}

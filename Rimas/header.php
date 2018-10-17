@@ -10,9 +10,13 @@
 </head>
 <body>
     <header>
+        <div class="navbar">
+            <div class="burger"></div>
+            <?php  include "menu.php"; ?>
+        </div>
     <!-- <div class="left-time"></div> -->
         <?php
-            include "menu.php";
+           
 
             if (! empty($_SESSION["id"])){
                 $sql = "SELECT * FROM users WHERE id = '" . $_SESSION["id"] . "' LIMIT 1" ;

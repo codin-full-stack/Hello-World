@@ -78,6 +78,7 @@ if(bar) {
         if (barList.classList.contains("active")) {
             barList.classList.remove("active")
         } else {
-        barList.classList.add("active")
-    }}); 
+            barList.classList.add("active")
+        }
+    }); 
 }

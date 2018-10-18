@@ -15,20 +15,21 @@
             <?php  include "menu.php"; ?>
         </div>
     <!-- <div class="left-time"></div> -->
-        <?php
-           
-
+        <?php           
             if (! empty($_SESSION["id"])){
                 $sql = "SELECT * FROM users WHERE id = '" . $_SESSION["id"] . "' LIMIT 1" ;
                 $result = mysqli_query($connection, $sql);
                 $row = mysqli_fetch_assoc($result);
-                
-                if(isset($_SESSION["id"])){
+            }
+        ?>
+    </header>
+    <div class="hero">
+        <?php
+            if(isset($_SESSION["id"])){
                 echo "<br>" . "Ahoy " . $row["first_name"] . " " . $row["last_name"];
                 echo "<br><br><a href='password.php'>Keisti Slaptazodi</a><br>";
                 echo "<br><a href='update.php'>Keisti Duomenis</a><br>";
                 echo "<br><a href='logout.php'>Atsijungti</a><br>";
                 }
-            }
         ?>
-    </header>
+    </div>

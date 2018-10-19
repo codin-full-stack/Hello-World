@@ -22,8 +22,9 @@
                 $row = mysqli_fetch_assoc($result);
             }
         ?>
-    </header>
+    
     <div class="hero">
+    <div class="left-time"></div>
         <?php
             if(isset($_SESSION["id"])){
                 echo "<br>" . "Ahoy " . $row["first_name"] . " " . $row["last_name"];
@@ -33,3 +34,4 @@
                 }
         ?>
     </div>
+    </header>

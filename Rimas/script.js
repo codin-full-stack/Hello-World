@@ -7,10 +7,11 @@ var leftDays = Math.floor(leftMiliseconds / dayMiliseconds);
 console.log(leftDays + " days left until Christmas!");
 
 var leftDaysEl = document.querySelector(".left-time");
-leftDaysEl.innerHTML = leftDays + " days left until Christmas!";
-leftDaysEl.style.color = "green";
-
+if (leftDaysEl){
+    leftDaysEl.innerHTML = leftDays + " days left until Christmas!";
+    leftDaysEl.style.color = "green";
 console.log(leftDaysEl);
+}
 
 var post2 = document.querySelector('.post:nth-child(2) .post-description');
 if(post2) {

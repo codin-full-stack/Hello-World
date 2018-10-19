@@ -6,4 +6,3 @@
     <a href="users.php">Users</a>
     <a href="java.php">JavaScript</a>
 </div>
-<div class="left-time"></div>

@@ -229,9 +229,13 @@ td {
 .burger {
     width: 35px;
     height: 35px;
-    background-color: #ffffff;
+    background-color: yellow;
     border: 1px solid red;
     float: right;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -261,12 +265,14 @@ td {
         background-color: #6D7AE0;
         z-index: 200;
     }
+    .hero {
+        margin-top: 30px;
+    }
 }
 .hero {
     width: 100%;
     height: auto;
     background-color: #FFAB87;
-    margin-top: 30px;
     padding-top: 10px;
     border-top: none;
 }

@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="navbar">
-            <div class="burger"></div>
+            <div class="burger">Menu<br></div>
             <?php  include "menu.php"; ?>
         </div>
     <!-- <div class="left-time"></div> -->

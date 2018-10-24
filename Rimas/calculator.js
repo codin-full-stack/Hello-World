@@ -11,7 +11,7 @@ if(number) {
             
             var pressval = clickedItem.getAttribute("data-value");
 
-            number.value += pressval;
+            number.value = pressval;
 
         })
     }

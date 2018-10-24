@@ -7,13 +7,28 @@
     <title>Bootstrap</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrapJS.js" async></script>
 </head>
 <body>
     <section class="container1">
+    <div class="menu">
+        <div class="menu-text">
+            <h3>Start Bootstrap</h3>
+            <h4>Home</h4>
+            <h4>About</h4>
+            <h4>Services</h4>
+            <h4>Portfolio</h4>
+            <h4>Contact</h4>
+        </div>
+        <div class="burger">
+        <i class="fas fa-bars"></i>
+        </div>
+    </div>
         <div class="container-middle">
             <h1>Stylish Portfolio</h1>
-            <h2>A Free Bootstrap Theme by Start Bootstrap</h2>
+            <h4>A Free Bootstrap Theme by Start Bootstrap</h4>
             <button type="button" class="btn btn-custom">Find Out More</button>
         </div>
     </section>
@@ -117,25 +132,13 @@
     <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=vilnius%20gediminas%20castle+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/"></a></iframe></div><br/>
     </section>
     <section class="container5">
-    <div class="container">
-        <div class="row">
-            <article class='col-md-4'>
-                <div class='icon2'>    
-                    <i class="fab fa-facebook-f"></i>
-                </div>
-            </article>
-            <article class='col-md-4'>
-                <div class='icon2'>    
-                    <i class="fab fa-instagram"></i>
-                </div>   
-            </article>
-            <article class='col-md-4'>
-                <div class='icon2'>    
-                    <i class="fab fa-github"></i>
-                </div>
-            </article>
+    <!-- <div class="container"> -->
+        <div class="bottom">
+            <a href="" class="icon2"><i class="fab fa-facebook-f foot-icon"></i></a>
+            <a href="" class="icon2"><i class="fab fa-twitter foot-icon"></i></a>
+            <a href="" class="icon2"><i class="fab fa-github foot-icon"></i></a>
         </div>
-    </div>
+    <!-- </div> -->
        <div class="copyright">Copyright <i class="far fa-copyright"></i> Your Website 2018</div>
 </section>
 

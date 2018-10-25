@@ -1,5 +1,5 @@
 <?php include "header.php";
-include "formlog.php";
+
 
 if (! empty($_POST)) {
 
@@ -8,15 +8,15 @@ $result = mysqli_query($connection, $sql);
 $row = mysqli_fetch_assoc($result);
 
 if(! empty($row)) {
-    var_dump($row);
-    var_dump($row['password']);
+    // var_dump($row);
+    // var_dump($row['password']);
     // ar pass sutampa
     //jei sutampa - setini sesija ir redirectini
     if ($row['password']== md5($_POST['password'])){
         // settinu sesija
         $_SESSION["id"] = $row["id"];
         // redirect to index
-        header('Location: index.php');
+        header('Location: posts.php');
         exit;
     } else {
         echo "Blogai ivestas slaptazodis";
@@ -37,5 +37,6 @@ if(! empty($row)) {
     //     }
     // }
 }
+include "formlog.php";
 ?>
 <?php include "footer.php"; ?>

@@ -1,8 +1,10 @@
 <?php
+session_start();
+
 $serverName = "localhost";
-$userName = "root";
-$password = "";
-$dbName ="rimas";
+$userName = "id7612165_admin";
+$password = "admin";
+$dbName ="id7612165_rimodb";
 
 $connection = mysqli_connect($serverName, $userName ,$password , $dbName);
 
